@@ -25,5 +25,7 @@ echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 
 echo $PWD
-chmod 0777 /target/${NAME}-${VERSION}.jar
+ls -l ./target/${NAME}-${VERSION}.jar
+chmod 0777 ./target/${NAME}-${VERSION}.jar
+ls ./target/${NAME}-${VERSION}.jar
 java -jar ./target/${NAME}-${VERSION}.jar
